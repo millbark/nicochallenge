@@ -1,6 +1,6 @@
 :root {
   --primary: #ffc107;
-  --secondary: #555;
+  --secondary: #333;
 }
 * {
   margin: 0;
@@ -23,6 +23,9 @@ h2 {
 button {
   cursor: pointer;
 }
+img{
+  width: 100%;
+}
 .p-top {
   padding-top: 50px;
 }
@@ -33,9 +36,6 @@ button {
   width: calc(100% - 100px);
   margin: auto;
 }
-html {
-  scroll-behavior: smooth;
-}
 body {
   width: 100%;
   line-height: 1;
@@ -44,8 +44,6 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #555;
 }
-
-
 header {
   position: sticky;
   top: 0;
@@ -57,7 +55,7 @@ header {
   background: var(--primary);
   font-size: 40px;
   font-weight: bold;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 header p {
   width: 180px;
@@ -78,7 +76,7 @@ header nav li a {
   padding: 10px 20px;
 }
 header nav li:hover a {
-  color: var(--secondary);
+  color: rgba(255, 255, 255, 1);
 }
 
 main {
@@ -96,89 +94,17 @@ main > div:nth-child(even) {
   position: relative;
   overflow: hidden;
 }
-.aboutMe > p:first-child {
+.aboutMe > p {
   height: 552px;
 }
-.aboutMe>p img{
+.aboutMe img {
   position: absolute;
-}
-.aboutMe>p:first-child img {
   left: 0;
   top: 0;
-  animation: move 5s forwards;
-}
-.aboutMe>p:nth-child(2) img {
-  position: absolute;
-  left: 20px;
-  top: 50px;
-  opacity: 0;
-  animation: move-gift 5s 2s forwards;
-}
-.aboutMe>p:nth-child(3) img{
-  top: 50px;
-  opacity: 0;
-  animation: move-click 5s 4s forwards;
-}
-
-@keyframes move {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50%;
-  }
-}
-@keyframes move-gift {
-  0% {
-    left: 0;
-    height: 0;
-    opacity: 0;
-  }
-  100% {
-    left: 60%;
-    height: 126px;
-    opacity: 1;
-  }
-}
-@keyframes move-click{
-  0%{
-    right: 0%;
-    opacity: 0;
-  }
-  100%{
-    right: 20%;
-    opacity: 1;
-  }
-}
-.about{
-  position: absolute;
-  right: 40px;
-  bottom: -500px;
-}
-.about p:first-child{
-  float: right;
-  padding-right: 15px;
-  font-size: 16px;
-}
-.about img{
-  padding-left: 15px;
-  height: 100px;
-}
-.me{
-
-  color: var(--primary);
-  opacity: .5;
-  font-size: 300px;
-}
-.me span:nth-child(4){
-  padding-right: 40px;
-}
-.me span:hover{
-  color: #333;
+  animation: move 5s infinite;
 }
 .aboutMe h1 {
-  margin: 20px 0;
-  font-size: 100px;
+  font-size: 150px;
   line-height: 1;
 }
 .aboutMe h1 span:nth-child(2) {
@@ -196,17 +122,23 @@ main > div:nth-child(even) {
 .intro {
   margin-top: 20px;
   color: var(--primary);
-  line-height: 40px;
+  font-size: 30px;
   transition: all 1s;
-  font-size: 50px;
-  color: #333;
 }
-#myGithub{
-  padding-left: 10px;
+.intro:hover {
+  background: var(--secondary);
+  font-size: 40px;
+  font-weight: bold;
 }
-
-/*스킬*/
-.skills {
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+스킬 .skills {
   align-items: center;
 }
 .skills div {
@@ -268,38 +200,24 @@ main > div:nth-child(even) {
   text-align: center;
   background: var(--primary);
 }
-.worksList li.active {
-  background: #fff;
-  text-decoration: underline;
-}
-.click {
-  position: absolute;
-  left: 50%;
-  top: 32%;
-  transform: translateX(-50%);
-  display: none;
-}
-.click.on{display: block;}
-
 .works > .worksView {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 800px;
-  height: 288px;
+  height: 216px;
 }
 .worksView {
   display: none;
 }
 .worksView.on {
   display: block;
-  height: 288px;
 }
 .works .worksSlide {
   width: 1200px;
-  height: 288px;
-  margin: 50px auto;
+  height: 216px;
+  margin: auto;
 }
 .worksSlide li {
   width: 400px;
@@ -307,6 +225,7 @@ main > div:nth-child(even) {
   border: 2px solid var(--primary);
   overflow: hidden;
 }
+
 .worksSlide li img {
   width: 400px;
 }
@@ -324,7 +243,7 @@ main > div:nth-child(even) {
   font-size: 0;
   cursor: pointer;
 }
-.slick-arrow::before {
+.worksSlide > button::before {
   font-family: xeicon;
   color: aliceblue;
 }
@@ -348,10 +267,10 @@ main > div:nth-child(even) {
   display: none;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 57.5%;
   transform: translate(-50%, -50%);
-  width: 800px;
-  height: 800px;
+  width: 500px;
+  height: 600px;
   background: var(--primary);
   text-align: center;
   padding: 50px;
@@ -376,6 +295,9 @@ main > div:nth-child(even) {
   border-radius: 100%;
   font-size: 20px;
 }
+.popUp p {
+  padding: 5px 0;
+}
 /*myStrength*/
 .myStrength {
   align-items: center;
@@ -397,30 +319,17 @@ main > div:nth-child(even) {
 }
 .myStrength img {
   width: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border-radius: 30px;
 }
 .myStrength li p {
   text-align: left;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  color: var(--secondary);
-}
-.myStrength li p strong {
   color: var(--primary);
 }
-/*footer*/
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-  background: var(--secondary);
-  color: #fff;
-  text-align: center;
-}
-footer p{
-  line-height: 20px;
+.myStrength li p strong {
+  color: var(--secondary);
+  font-size: 24px;
 }
