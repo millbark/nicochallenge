@@ -15,7 +15,7 @@ $(function(){
   
 $('.worksSlide').slick({
   centerMode: true,
-  centerPadding: '0px',
+  centerPadding: '20px',
   slidesToShow: 3,
   responsive: [
     {
@@ -45,15 +45,17 @@ $('.works_navi').click(function(e){
   $('.worksView').removeClass('on');
   $('#' + current).addClass('on');
 });
-$('.works_navi').eq(0).click(function(){
-  $('.click').addClass('on');
-})
 $('.worksList li').click(function(e){
   e.preventDefault();
   $('.worksList li').removeClass('active');
   let current=$(this).addClass('active')
 });
-
+$('.works_navi').click(function(){
+  $('.click').removeClass('on');
+})
+$('.worksList-1').click(function(){
+  $('.click').addClass('on');
+})
 //팝업
 $('.post').click(function(e){
   e.preventDefault();

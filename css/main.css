@@ -45,7 +45,6 @@ body {
   color: #555;
 }
 
-
 header {
   position: sticky;
   top: 0;
@@ -99,22 +98,22 @@ main > div:nth-child(even) {
 .aboutMe > p:first-child {
   height: 552px;
 }
-.aboutMe>p img{
+.aboutMe > p img {
   position: absolute;
 }
-.aboutMe>p:first-child img {
+.aboutMe > p:first-child img {
   left: 0;
   top: 0;
   animation: move 5s forwards;
 }
-.aboutMe>p:nth-child(2) img {
+.aboutMe > p:nth-child(2) img {
   position: absolute;
   left: 20px;
   top: 50px;
   opacity: 0;
   animation: move-gift 5s 2s forwards;
 }
-.aboutMe>p:nth-child(3) img{
+.aboutMe > p:nth-child(3) img {
   top: 50px;
   opacity: 0;
   animation: move-click 5s 4s forwards;
@@ -140,40 +139,39 @@ main > div:nth-child(even) {
     opacity: 1;
   }
 }
-@keyframes move-click{
-  0%{
+@keyframes move-click {
+  0% {
     right: 0%;
     opacity: 0;
   }
-  100%{
+  100% {
     right: 20%;
     opacity: 1;
   }
 }
-.about{
+.about {
   position: absolute;
   right: 40px;
   bottom: -500px;
 }
-.about p:first-child{
+.about p:first-child {
   float: right;
   padding-right: 15px;
   font-size: 16px;
 }
-.about img{
+.about img {
   padding-left: 15px;
   height: 100px;
 }
-.me{
-
+.me {
   color: var(--primary);
-  opacity: .5;
+  opacity: 0.5;
   font-size: 300px;
 }
-.me span:nth-child(4){
+.me span:nth-child(4) {
   padding-right: 40px;
 }
-.me span:hover{
+.me span:hover {
   color: #333;
 }
 .aboutMe h1 {
@@ -201,7 +199,7 @@ main > div:nth-child(even) {
   font-size: 50px;
   color: #333;
 }
-#myGithub{
+#myGithub {
   padding-left: 10px;
 }
 
@@ -275,11 +273,13 @@ main > div:nth-child(even) {
 .click {
   position: absolute;
   left: 50%;
-  top: 32%;
+  top: 40%;
   transform: translateX(-50%);
   display: none;
 }
-.click.on{display: block;}
+.click.on {
+  display: block;
+}
 
 .works > .worksView {
   position: absolute;
@@ -294,27 +294,40 @@ main > div:nth-child(even) {
 }
 .worksView.on {
   display: block;
-  height: 288px;
+  height: 400px;
 }
 .works .worksSlide {
-  width: 1200px;
-  height: 288px;
+  width: 1500px;
+  height: 500px;
   margin: 50px auto;
 }
 .worksSlide li {
-  width: 400px;
-  height: 288px;
-  border: 2px solid var(--primary);
+  width: 500px;
+  height: 500px;
   overflow: hidden;
+  text-align: center;
 }
 .worksSlide li img {
-  width: 400px;
+  width: 500px;
+}
+.worksSlide .slick-slide {
+  opacity: 0.5;
+}
+.worksSlide .slick-center {
+  opacity: 1;
+}
+.post span {
+  margin-left: 5px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
 }
 /*포트폴리오 슬라이드 버튼*/
 .worksSlide > button {
   z-index: 100;
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
@@ -329,14 +342,14 @@ main > div:nth-child(even) {
   color: aliceblue;
 }
 .slick-prev {
-  left: -70px;
+  left: -10px;
 }
 .slick-prev::before {
   content: "\e93b";
   font-size: 20px;
 }
 .slick-next {
-  right: -70px;
+  right: -10px;
 }
 .slick-next::before {
   content: "\e93e";
@@ -354,18 +367,39 @@ main > div:nth-child(even) {
   height: 800px;
   background: var(--primary);
   text-align: center;
-  padding: 50px;
   color: #333;
 }
 .popUp.on {
   display: block;
 }
 .popUp img {
-  width: 400px;
+  width: 600px;
+}
+.popUp > div {
+  width: 700px;
+  height: 250px;
+  margin: auto;
+  padding-top: 10px;
+  background: #fff;
 }
 .popUp h1 {
-  padding: 30px 0;
+  width: 600px;
+  padding: 10px 0;
+  margin: auto;
+  border-bottom: 1px solid var(--secondary);
   color: var(--secondary);
+}
+.popUp div p {
+  width: 300px;
+  height: 40px;
+  margin: auto;
+  line-height: 40px;
+  text-align: left;
+}
+.popUp div span {
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .popUp > button {
   position: absolute;
@@ -375,6 +409,15 @@ main > div:nth-child(even) {
   height: 30px;
   border-radius: 100%;
   font-size: 20px;
+}
+.popUp > p {
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  display: inline-block;
+  padding: 10px;
+  background: var(--secondary);
+  color: #fff;
 }
 /*myStrength*/
 .myStrength {
@@ -411,16 +454,15 @@ main > div:nth-child(even) {
   color: var(--primary);
 }
 /*footer*/
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100px;
-  background: var(--secondary);
-  color: #fff;
+  background: #fff;
   text-align: center;
 }
-footer p{
+footer p {
   line-height: 20px;
 }
