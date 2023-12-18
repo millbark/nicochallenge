@@ -44,6 +44,15 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #555;
 }
+#skipNavi {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  text-indent: -9999px;
+  font-size: 0;
+  z-index: 999;
+}
 
 header {
   position: sticky;
@@ -175,7 +184,7 @@ main > div:nth-child(even) {
   color: #333;
 }
 .aboutMe h1 {
-  margin: 20px 0;
+  margin-top: 20px;
   font-size: 100px;
   line-height: 1;
 }
@@ -291,10 +300,41 @@ main > div:nth-child(even) {
 }
 .worksView {
   display: none;
+  margin-top: 70px;
 }
 .worksView.on {
-  display: block;
-  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.worksView h1 {
+  width: 600px;
+  padding: 10px 0;
+  margin: auto;
+  border-bottom: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+.worksView div > p {
+  width: 600px;
+  height: 40px;
+  margin: auto;
+  line-height: 40px;
+  text-align: left;
+}
+.worksView div > span {
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.going-button {
+  position: absolute;
+  right: 150px;
+  top: 400px;
+  display: inline-block;
+  padding: 10px;
+  background: var(--secondary);
+  color: #fff;
 }
 .works .worksSlide {
   width: 1500px;
@@ -355,6 +395,15 @@ main > div:nth-child(even) {
   content: "\e93e";
   font-size: 20px;
 }
+/*worksList-2*/
+#worksList-2 {
+  padding-top: 70px;
+  width: 1500px;
+}
+#worksList-2 img {
+  width: 600px;
+}
+
 /*팝업*/
 .popUp {
   z-index: 100;
@@ -410,40 +459,38 @@ main > div:nth-child(even) {
   border-radius: 100%;
   font-size: 20px;
 }
-.popUp > p {
-  position: absolute;
-  right: 100px;
-  top: 400px;
-  display: inline-block;
-  padding: 10px;
-  background: var(--secondary);
-  color: #fff;
-}
 /*myStrength*/
 .myStrength {
+  justify-content: center;
   align-items: center;
 }
 .myStrength ul {
-  gap: 40px;
+  gap: 10px;
 }
 .myStrength li {
   width: calc(100% / 3);
   height: 500px;
-  padding: 40px;
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
+}
+.myStrength li:nth-child(1) {
+  background: url(../images/myStrength/strength-1.png) no-repeat center center;
+}
+.myStrength li:nth-child(2) {
+  background: url(../images/myStrength/strength-2.png) no-repeat center center;
+}
+.myStrength li:nth-child(3) {
+  background: url(../images/myStrength/strength-3.png) no-repeat center center;
 }
 .myStrength li > h2 {
   color: var(--secondary);
   font-size: 30px;
   text-align: left;
 }
-.myStrength img {
-  width: 200px;
-  margin-bottom: 30px;
-  border-radius: 30px;
-}
 .myStrength li p {
+  padding-top: 70px;
+  width: 70%;
+  margin: auto;
   text-align: left;
   line-height: 40px;
   font-size: 18px;

@@ -41,13 +41,14 @@
     <script src="js/main.js"></script>
   </head>
   <body class="d-flex">
+    <div id="skipNavi"><a href="#gnb">주메뉴 바로가기</a></div>
     <header>
       <p>
         <a href="#"><img src="images/header-image.png" alt="..." /></a>
       </p>
-      <nav>
+      <nav id="gnb">
         <ul>
-          <li><a href="#aboutMe">Ubout Me</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
           <li>
             <a href="#skills">Skills &<br />Sertificate</a>
           </li>
@@ -162,7 +163,27 @@
           </ul>
           <img class="click on" src="images/click.png" alt="click" />
         </div>
-        <div class="worksView" id="worksList-2" style="background: red"></div>
+        <div class="worksView" id="worksList-2">
+          <p><img src="images/works/work2-1.png" alt="" /></p>
+          <div>
+            <h1>Crome - Momentom</h1>
+            <p><span>TYPE</span><em>반응형</em></p>
+            <p><span>PAGE</span><em>Main</em></p>
+            <p><span>TOOL</span><em>HTML,CSS,JS(JQuery),Photoshop</em></p>
+            <p>
+              <span>COMENT</span
+              ><em> 노마드코더 크롬앱만들기 2주 챌린지의 완성물 </em>
+            </p>
+          </div>
+          <p>
+            <a
+              class="going-button"
+              target="_blank"
+              href="https://millbark.github.io/"
+              >페이지 바로가기</a
+            >
+          </p>
+        </div>
         <div class="worksView" id="worksList-3" style="background: pink"></div>
         <div
           class="worksView"
@@ -180,7 +201,9 @@
             <p><span>COMENT</span><em>레이아웃 float와 position만 사용</em></p>
           </div>
           <p>
-            <a href="https://millbark.github.io/clone-1/">페이지 바로가기</a>
+            <a class="going-button" href="https://millbark.github.io/clone-1/"
+              >페이지 바로가기</a
+            >
           </p>
           <button type="button">X</button>
         </div>
@@ -194,7 +217,10 @@
             <p><span>COMENT</span><em>레이아웃 float와 position만 사용</em></p>
           </div>
           <p>
-            <a target="_blank" href="https://millbark.github.io/clone-2/"
+            <a
+              class="going-button"
+              target="_blank"
+              href="https://millbark.github.io/clone-2/"
               >페이지 바로가기</a
             >
           </p>
@@ -239,7 +265,6 @@
           <h2>MyStrength</h2>
           <ul class="d-flex">
             <li>
-              <img src="images/myStrength/anjel.gif" alt="" />
               <p>
                 표준과 웹 접근성 준수, SEO 최적화를 위해 페이지 구조와 태그의
                 의미를 고려하며 마크업하는 것을 지향합니다.<br />
@@ -248,7 +273,6 @@
               </p>
             </li>
             <li>
-              <img src="images/myStrength/anjel.gif" alt="" />
               <p>
                 레이아웃 배치, 컬러 사용 시 사용자 입장에서의 사용성을 고려하며
                 불편함이 없도록 디자인하고자 노력합니다.
@@ -257,7 +281,6 @@
               </p>
             </li>
             <li>
-              <img src="images/myStrength/anjel.gif" alt="" />
               <p>
                 서비스 업무의 경험을 통해 담당자들 또는 고객과의
                 <strong>원활한 소통</strong>이 가능합니다.
