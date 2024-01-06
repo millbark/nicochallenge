@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박미리 포트폴리오</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--xeicon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <!--slick-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body class="d-flex">
+    <header>
+      <p><img src="images/header-image.png" alt="..." /></p>
+      <nav>
+        <ul>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li>
+            <a href="#skills">Skills &<br />Sertificate</a>
+          </li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#myStrength">My Strength</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="aboutMe" id="aboutMe">
+        <p><img src="images/main-image.jpg" alt="try me!" /></p>
+        <div class="inner">
+          <h1><span>Park</span><span>Miri</span></h1>
+          <p>
+            경기도 성남시 수정구&middot;&middot;&middot;
+            <span>CONTACT ME : </span>
+            <a href="mailto:name@email.com">millbark@naver.com</a>
+          </p>
+          <p class="intro">
+            "안녕하세요!<br />
+            <code>html</code>처럼 계속 성장하는 박미리 입니다."
+          </p>
+        </div>
+      </div>
+      <div class="skills" id="skills">
+        <div class="skill">
+          <h2>Skills 💛</h2>
+          <ul class="d-flex">
+            <li><img src="images/skills/html-5.png" alt="html-5" /></li>
+            <li><img src="images/skills/css-3.png" alt="css-3" /></li>
+            <li><img src="images/skills/js.png" alt="js" /></li>
+            <li><img src="images/skills/jquery.png" alt="jquery" /></li>
+            <li><img src="images/skills/git.png" alt="git" /></li>
+            <li><img src="images/skills/figma.png" alt="figma" /></li>
+            <li><img src="images/skills/photoshop.png" alt="photoshop" /></li>
+            <li>
+              <img src="images/skills/illustrator.png" alt="illustrator" />
+            </li>
+            <li><img src="images/skills/indesign.png" alt="indesign" /></li>
+          </ul>
+        </div>
+        <div class="sertificate">
+          <h2>Sertificate</h2>
+          <ul>
+            <li>▶ <span>GTQ 1급</span></li>
+            <li>▶ <span>GTQi 1급</span></li>
+            <li>▶ <span>그래픽스운용기능사</span> 결과 기다리는중</li>
+            <li>▶ <span>웹디자인기능사</span> 결과 기다리는중</li>
+          </ul>
+        </div>
+      </div>
+      <div class="works inner" id="works">
+        <h2 class="p-top">Works</h2>
+        <ul class="d-flex worksList">
+          <li class="works_navi" data-name="worksList-1">
+            <a href="#">Clone</a>
+          </li>
+          <li class="works_navi" data-name="worksList-2">
+            <a href="#">Create</a>
+          </li>
+          <li class="works_navi" data-name="worksList-3">
+            <a href="#">Project</a>
+          </li>
+          <li class="works_navi" data-name="worksList-4">
+            <a href="#">Design</a>
+          </li>
+          <li class="works_navi" data-name="worksList-5">
+            <a href="#">Design-2</a>
+          </li>
+        </ul>
+        <ul class="worksSlide worksView on" id="worksList-1">
+          <li class="post" data-id="pop1">
+            <a href="#"><img src="images/clone-site-1.PNG" alt="..." /></a>
+          </li>
+          <li class="post" data-id="pop2">
+            <a href="#"><img src="images/clone-site-2.PNG" alt="..." /></a>
+          </li>
+          <li class="post" data-id="pop3">
+            <a href="#"><img src="images/circus.png" alt="..." /></a>
+          </li>
+          <li class="post" data-id="pop4">
+            <a href="#"><img src="images/game.png" alt="..." /></a>
+          </li>
+          <li class="post" data-id="pop5">
+            <a href="#"><img src="images/submarine.png" alt="..." /></a>
+          </li>
+        </ul>
+        <div class="worksView" id="worksList-2" style="background: red"></div>
+        <div class="worksView" id="worksList-3" style="background: pink"></div>
+        <div
+          class="worksView"
+          id="worksList-4"
+          style="background: skyblue"
+        ></div>
+        <div class="worksView" id="worksList-5" style="background: green"></div>
+        <div class="popUp" id="pop1">
+          <a href="#"><img src="images/works/works-1.png" alt="..." /></a>
+          <h1>맥도날드</h1>
+          <p>클론코딩-적응형</p>
+          <p>제작기간 : 38시간</p>
+          <p>레이아웃은 float,position 사용</p>
+          <button type="button">X</button>
+        </div>
+        <div class="popUp" id="pop2">
+          <a href="#"><img src="images/works/works2.png" alt="..." /></a>
+          <h1>도미노피자</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam
+            tempora quia omnis veniam, distinctio nobis, quaerat sed esse velit
+            sapiente! Illo nobis quaerat nisi ipsa est animi dolores
+            voluptatibus?
+          </p>
+          <button type="button">X</button>
+        </div>
+        <div class="popUp" id="pop3">
+          <a href="#"><img src="images/works/web-macdonald.png" alt="..." /></a>
+          <h1>클론코딩-맥도날드</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam
+            tempora quia omnis veniam, distinctio nobis, quaerat sed esse velit
+            sapiente! Illo nobis quaerat nisi ipsa est animi dolores
+            voluptatibus?
+          </p>
+          <button type="button">X</button>
+        </div>
+        <div class="popUp" id="pop4">
+          <a href="#"><img src="images/works/web-macdonald.png" alt="..." /></a>
+          <h1>클론코딩-맥도날드</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam
+            tempora quia omnis veniam, distinctio nobis, quaerat sed esse velit
+            sapiente! Illo nobis quaerat nisi ipsa est animi dolores
+            voluptatibus?
+          </p>
+          <button type="button">X</button>
+        </div>
+        <div class="popUp" id="pop5">
+          <a href="#"><img src="images/works/web-macdonald.png" alt="..." /></a>
+          <h1>클론코딩-맥도날드</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam
+            tempora quia omnis veniam, distinctio nobis, quaerat sed esse velit
+            sapiente! Illo nobis quaerat nisi ipsa est animi dolores
+            voluptatibus?
+          </p>
+          <button type="button">X</button>
+        </div>
+      </div>
+      <div class="myStrength d-flex" id="myStrength">
+        <div class="inner">
+          <h2>MyStrength</h2>
+          <ul class="d-flex">
+            <li>
+              <h2>웹표준 웹 접근성</h2>
+              <img src="images/myStrength/angel.gif" alt="" />
+              <p>
+                다양한 사용자를 위해서<br /><strong>웹표준 웹접근성</strong>을
+                생각하여 사이트를 만듭니다.
+              </p>
+            </li>
+            <li>
+              <h2>ddd</h2>
+              <p>
+                다양한 사용자를 위해 웹표준,웹접근성을 생각하여 사이트를
+                만듭니다.
+              </p>
+            </li>
+            <li>
+              <h2>ddd</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                reprehenderit nemo iste impedit deserunt quidem, eligendi
+                corrupti cumque aperiam nesciunt totam quod similique doloribus
+                assumenda quam est libero rem a?
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

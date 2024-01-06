@@ -1,0 +1,335 @@
+:root {
+  --primary: #ffc107;
+  --secondary: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+h2 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: var(--primary);
+}
+button {
+  cursor: pointer;
+}
+img{
+  width: 100%;
+}
+.p-top {
+  padding-top: 50px;
+}
+.d-flex {
+  display: flex;
+}
+.inner {
+  width: calc(100% - 100px);
+  margin: auto;
+}
+body {
+  width: 100%;
+  line-height: 1;
+  font-family: "Saira Extra Condensed", "Nanum Gothic", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #555;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100vh;
+  padding-top: 200px;
+  text-align: center;
+  background: var(--primary);
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+}
+header p {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 180px;
+  padding-top: 15px;
+  background: rgba(255, 255, 255, 0.5);
+}
+header img {
+  width: 150px;
+  margin: auto;
+}
+header nav {
+  margin-top: 20px;
+}
+header nav li a {
+  padding: 10px 20px;
+}
+header nav li:hover a {
+  color: rgba(255, 255, 255, 1);
+}
+
+main {
+  width: 85%;
+}
+main > div {
+  width: 100%;
+  height: 100vh;
+}
+main > div:nth-child(even) {
+  background: lightgoldenrodyellow;
+}
+/*about me*/
+.aboutMe {
+  position: relative;
+  overflow: hidden;
+}
+.aboutMe > p {
+  height: 552px;
+}
+.aboutMe img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: move 5s infinite;
+}
+.aboutMe h1 {
+  font-size: 150px;
+  line-height: 1;
+}
+.aboutMe h1 span:nth-child(2) {
+  margin-left: 10px;
+  color: var(--primary);
+}
+.aboutMe div {
+  font-size: 30px;
+}
+.aboutMe div p a,
+.aboutMe div p span {
+  display: inline;
+  font-weight: bold;
+}
+.intro {
+  margin-top: 20px;
+  color: var(--primary);
+  font-size: 30px;
+  transition: all 1s;
+}
+.intro:hover {
+  background: var(--secondary);
+  font-size: 40px;
+  font-weight: bold;
+}
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+스킬 .skills {
+  align-items: center;
+}
+.skills div {
+  width: 100%;
+  padding: 40px;
+}
+.skills div:nth-child(2) {
+  height: 519px;
+}
+.skills h2 {
+  padding: 20px;
+}
+.skills ul {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skills ul li {
+  width: 80px;
+}
+.skills ul li:hover img {
+  transform: scale(1.2);
+}
+.skills ul li img {
+  width: 80px;
+}
+.sertificate h2 {
+  margin-bottom: 30px;
+}
+.sertificate ul li {
+  padding: 30px 10px;
+  width: 100%;
+  font-size: 20px;
+}
+.sertificate ul li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.sertificate span {
+  font-weight: bold;
+}
+/*포트폴리오*/
+.works {
+  position: relative;
+  padding-top: 200px;
+  height: 100vh;
+}
+/*works nav*/
+.worksList {
+  z-index: 30;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 250px;
+}
+.worksList li {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  background: var(--primary);
+}
+.works > .worksView {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 216px;
+}
+.worksView {
+  display: none;
+}
+.worksView.on {
+  display: block;
+}
+.works .worksSlide {
+  width: 1200px;
+  height: 216px;
+  margin: auto;
+}
+.worksSlide li {
+  width: 400px;
+  height: 288px;
+  border: 2px solid var(--primary);
+  overflow: hidden;
+}
+
+.worksSlide li img {
+  width: 400px;
+}
+/*포트폴리오 슬라이드 버튼*/
+.worksSlide > button {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--primary);
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+.worksSlide > button::before {
+  font-family: xeicon;
+  color: aliceblue;
+}
+.slick-prev {
+  left: -70px;
+}
+.slick-prev::before {
+  content: "\e93b";
+  font-size: 20px;
+}
+.slick-next {
+  right: -70px;
+}
+.slick-next::before {
+  content: "\e93e";
+  font-size: 20px;
+}
+/*팝업*/
+.popUp {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 57.5%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+  background: var(--primary);
+  text-align: center;
+  padding: 50px;
+  color: #333;
+}
+.popUp.on {
+  display: block;
+}
+.popUp img {
+  width: 400px;
+}
+.popUp h1 {
+  padding: 30px 0;
+  color: var(--secondary);
+}
+.popUp > button {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-size: 20px;
+}
+.popUp p {
+  padding: 5px 0;
+}
+/*myStrength*/
+.myStrength {
+  align-items: center;
+}
+.myStrength ul {
+  gap: 40px;
+}
+.myStrength li {
+  width: calc(100% / 3);
+  height: 500px;
+  padding: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+}
+.myStrength li > h2 {
+  color: var(--secondary);
+  font-size: 30px;
+  text-align: left;
+}
+.myStrength img {
+  width: 200px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+.myStrength li p {
+  text-align: left;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+}
+.myStrength li p strong {
+  color: var(--secondary);
+  font-size: 24px;
+}
