@@ -23,6 +23,9 @@ h2 {
 button {
   cursor: pointer;
 }
+em{
+  font-style: normal;
+}
 .p-top {
   padding-top: 50px;
 }
@@ -215,6 +218,8 @@ main > div:nth-child(even) {
 /*스킬*/
 .skills {
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .skills div {
   width: 100%;
@@ -253,6 +258,25 @@ main > div:nth-child(even) {
 .sertificate span {
   font-weight: bold;
 }
+.skill p img{
+  position: absolute;
+  right: -100px;
+  bottom: -160px;
+  width: 620px;
+}
+.skill p:nth-child(3) img{
+  width: 480px;
+  right: -30px;
+  bottom: -100px;
+}
+.skill p:nth-child(4) img{
+animation: spin 10s linear infinite}
+@keyframes spin{
+from{rotate: 0;}
+to{rotate: 360deg;}
+}
+
+
 /*포트폴리오*/
 .works {
   position: relative;
@@ -364,7 +388,7 @@ main > div:nth-child(even) {
   color: #fff;
 }
 /*포트폴리오 슬라이드 버튼*/
-.worksSlide > button {
+.worksSlide > button,.slide2 button{
   z-index: 100;
   position: absolute;
   top: 40%;
@@ -421,6 +445,19 @@ main > div:nth-child(even) {
   color: #fff;
   margin-left: 10px;
   line-height: 1.5;  
+}
+.slide2{
+  margin-top: 100px;
+  width: 100%;
+}
+.slide2 img{
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+.slide2 .banner{
+  padding-top: 50px;
+  width: 80%;
 }
 
 

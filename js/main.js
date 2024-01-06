@@ -56,6 +56,12 @@ $('.works_navi').click(function(){
 $('.worksList-1').click(function(){
   $('.click').addClass('on');
 })
+
+//#4
+$('.slide2').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
 //팝업
 $('.post').click(function(e){
   e.preventDefault();
