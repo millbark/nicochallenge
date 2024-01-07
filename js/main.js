@@ -13,7 +13,7 @@ $(function(){
   
   //포트폴리오 슬라이드
   
-$('.slide1').slick({
+$('.worksSlide').slick({
   centerMode: true,
   centerPadding: '20px',
   slidesToShow: 3,
