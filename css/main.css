@@ -258,19 +258,13 @@ main > div:nth-child(even) {
 .sertificate span {
   font-weight: bold;
 }
-.skill p img{
-  position: absolute;
-  right: -100px;
-  bottom: -160px;
-  width: 620px;
-}
+
 .skill p:nth-child(3) img{
-  width: 480px;
-  right: -30px;
-  bottom: -100px;
-}
-.skill p:nth-child(4) img{
-animation: spin 10s linear infinite}
+  position: absolute;
+  right: -150px;
+  bottom: -160px;
+  width: 700px;
+animation: spin 20s linear infinite}
 @keyframes spin{
 from{rotate: 0;}
 to{rotate: 360deg;}
@@ -455,11 +449,14 @@ to{rotate: 360deg;}
   height: auto;
   margin: auto;
 }
+
 .slide2 .banner{
   padding-top: 50px;
   width: 80%;
 }
-
+#worksList-5 p{
+  text-align: center;
+}
 
 /*팝업*/
 .popUp {

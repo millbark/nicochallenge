@@ -13,7 +13,7 @@ $(function(){
   
   //포트폴리오 슬라이드
   
-$('.worksSlide').slick({
+$('.slide1').slick({
   centerMode: true,
   centerPadding: '20px',
   slidesToShow: 3,
@@ -56,12 +56,21 @@ $('.works_navi').click(function(){
 $('.worksList-1').click(function(){
   $('.click').addClass('on');
 })
-
 //#4
-$('.slide2').slick({
-  autoplay: true,
-  autoplaySpeed: 2000,
+$('.slide2').slick();
+//#5
+
+$('#goods2').hover(function(){
+  $(this).stop().attr('src','../images/design/goods2-1.png')
+},function(){
+  $(this).stop().attr('src','../images/design/goods2.png')
 });
+$('#goods3').hover(function(){
+  $(this).stop().attr('src','../images/design/goods3-1.png')
+},function(){
+  $(this).stop().attr('src','../images/design/goods3.png')
+});
+
 //팝업
 $('.post').click(function(e){
   e.preventDefault();
