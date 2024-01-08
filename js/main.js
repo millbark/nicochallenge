@@ -61,14 +61,14 @@ $('.slide2').slick();
 //#5
 
 $('#goods2').hover(function(){
-  $(this).stop().attr('src','../images/design/goods2-1.png')
+  $(this).stop().attr('src','images/design/goods2-1.png')
 },function(){
-  $(this).stop().attr('src','../images/design/goods2.png')
+  $(this).stop().attr('src','images/design/goods2.png')
 });
 $('#goods3').hover(function(){
-  $(this).stop().attr('src','../images/design/goods3-1.png')
+  $(this).stop().attr('src','images/design/goods3-1.png')
 },function(){
-  $(this).stop().attr('src','../images/design/goods3.png')
+  $(this).stop().attr('src','images/design/goods3.png')
 });
 
 //팝업
