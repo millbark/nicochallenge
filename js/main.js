@@ -57,7 +57,8 @@ $('.worksList-1').click(function(){
   $('.click').addClass('on');
 })
 //#4
-$('.slide2').slick();
+$('.slide2').slick({
+});
 //#5
 
 $('#goods2').hover(function(){

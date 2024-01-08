@@ -32,13 +32,16 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js" defer></script>
     <script src="js/main.js"></script>
   </head>
   <body class="d-flex">
@@ -108,7 +111,7 @@
             </li>
             <li><img src="images/skills/indesign.png" alt="indesign" /></li>
           </ul>
-          <p><img src="images/skills/hard.png" alt="study"></p>
+          <p><img src="images/skills/hard.png" alt="study" /></p>
         </div>
         <div class="sertificate">
           <h2>Sertificate</h2>
@@ -173,8 +176,8 @@
             <p><strong>PAGE</strong> <em>Main</em></p>
             <p><strong>TOOL</strong> <em>HTML,CSS,JS(JQuery),Photoshop</em></p>
             <p>
-              <strong>COMENT</strong
-              > <em> 노마드코더 크롬앱만들기 2주 챌린지의 완성물 </em>
+              <strong>COMENT</strong>
+              <em> 노마드코더 크롬앱만들기 2주 챌린지의 완성물 </em>
             </p>
           </div>
           <p>
@@ -194,8 +197,8 @@
             <p><strong>PAGE</strong> <em>Main</em></p>
             <p><strong>TOOL</strong> <em>HTML,CSS,JS(JQuery),Photoshop</em></p>
             <p>
-              <strong>COMENT</strong
-              > <em> 팀원:박미리(디자인),민선옥(코딩)</em><br>
+              <strong>COMENT</strong> <em> 팀원:박미리(디자인),민선옥(코딩)</em
+              ><br />
               기존의 복잡한 레이아웃을 사용하기 편하도록 리디자인하였습니다.
             </p>
             <p class="going d-flex">
@@ -206,52 +209,63 @@
                 >페이지 바로가기</a
               >
               <a
-              class="going-button"
-              target="_blank"
-              href="https://onedrive.live.com/edit?id=153AC41A3B520D58!1610&resid=153AC41A3B520D58!1610&ithint=file%2cpptx&authkey=!ABa8KyIVvRlifNk&wdo=2&cid=153ac41a3b520d58"
-              >기획안</a
-            >
-            <a
-            class="going-button"
-            target="_blank"
-            href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13-3&mode=design"
-            >와이어프레임</a
-          >
-          <a
-          class="going-button"
-          target="_blank"
-          href="https://www.figma.com/file/WCXNTAtgc0uAyZq7LvmMmO/sidmool?type=design&node-id=21-22&mode=design"
-          >디자인시안</a
-        >
+                class="going-button"
+                target="_blank"
+                href="https://onedrive.live.com/edit?id=153AC41A3B520D58!1610&resid=153AC41A3B520D58!1610&ithint=file%2cpptx&authkey=!ABa8KyIVvRlifNk&wdo=2&cid=153ac41a3b520d58"
+                >기획안</a
+              >
+              <a
+                class="going-button"
+                target="_blank"
+                href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13-3&mode=design"
+                >와이어프레임</a
+              >
+              <a
+                class="going-button"
+                target="_blank"
+                href="https://www.figma.com/file/WCXNTAtgc0uAyZq7LvmMmO/sidmool?type=design&node-id=21-22&mode=design"
+                >디자인시안</a
+              >
             </p>
           </div>
-
         </div>
-        <div
-          class="worksView"
-          id="worksList-4"
-        >
-        <ul class="slide2">
-          <li><img src="images/design/banner1.png" alt="배너1" class="banner"></li>
-          <li><img src="images/design/banner2.png" alt="배너2" class="banner"></li>
-          <li><img src="images/design/banner3.png" alt="배너3" class="banner"></li>
-          <li><img src="images/design/sns1.png" alt="sns1"></li>
-          <li><img src="images/design/sns2.png" alt="sns2"></li>
-          <li><img src="images/design/sns3.png" alt="sns3"></li>
-          <li><img src="images/design/sns4.png" alt="sns4"></li>
-          <li><img src="images/design/sns5.png" alt="sns5"></li>
-          <li><img src="images/design/sns6.png" alt="sns6"></li>
-        </ul>
-      </div>
-        <div class="worksView" id="worksList-5">
+        <div class="swiper mySwiper worksView" id="worksList-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="banner" src="images/design/banner1.png" alt="배너1" /></div>
+            <div class="swiper-slide"><img class="banner" src="images/design/banner2.png" alt="배너2" /></div>
+            <div class="swiper-slide"><img class="banner" src="images/design/banner3.png" alt="배너3" /></div>
+            <div class="swiper-slide"><img src="images/design/sns1.png" alt="sns1" /></div>
+            <div class="swiper-slide"><img src="images/design/sns2.png" alt="sns2" /></div>
+            <div class="swiper-slide"><img src="images/design/sns3.png" alt="sns3" /></div>
+            <div class="swiper-slide"><img src="images/design/sns4.png" alt="sns4" /></div>
+            <div class="swiper-slide"><img src="images/design/sns5.png" alt="sns6" /></div>
+            <div class="swiper-slide"><img src="images/design/sns6.png" alt="sns6" /></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiper worksView" id="worksList-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/design/goods1.png" alt="goods1" /></div>
+            <div class="swiper-slide"><img src="images/design/goods2.png" alt="goods2" id="goods2" /></div>
+            <div class="swiper-slide"><img src="images/design/goods3.png" alt="goods3" id="goods3" /></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- <div class="worksView" id="worksList-5">
           <ul class="slide2">
-            <li><img src="images/design/goods1.png" alt="goods1">
-              </li>
-            <li><img src="images/design/goods2.png" alt="goods2" id="goods2">
+            <li><img src="images/design/goods1.png" alt="goods1" /></li>
+            <li>
+              <img src="images/design/goods2.png" alt="goods2" id="goods2" />
             </li>
-            <li><img src="images/design/goods3.png" alt="goods3" id="goods3">
-              </li>
-          </ul></div>
+            <li>
+              <img src="images/design/goods3.png" alt="goods3" id="goods3" />
+            </li>
+          </ul>
+        </div> -->
         <div class="popUp" id="pop1">
           <a href="#"><img src="images/works/work1.png" alt="맥도날드" /></a>
           <div>
@@ -259,7 +273,9 @@
             <p><strong>TYPE</strong> <em>적응형</em></p>
             <p><strong>PAGE</strong> <em>Main + 메뉴부분</em></p>
             <p><strong>TOOL</strong> <em>HTML,CSS,JS(JQuery)</em></p>
-            <p><strong>COMENT</strong> <em>레이아웃 float와 position만 사용</em></p>
+            <p>
+              <strong>COMENT</strong> <em>레이아웃 float와 position만 사용</em>
+            </p>
           </div>
           <p>
             <a class="going-button" href="https://millbark.github.io/clone-1/"
@@ -321,6 +337,7 @@
           <button type="button">X</button>
         </div>
       </div>
+      
       <div class="myStrength d-flex" id="myStrength">
         <div class="inner">
           <h2>MyStrength</h2>
