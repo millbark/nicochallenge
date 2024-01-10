@@ -400,6 +400,9 @@ main > div:nth-child(even) {
   font-size: 0;
   cursor: pointer;
 }
+.worksSlide > button{
+  top: 40%;
+}
 .slick-arrow::before{
   font-family: xeicon;
   color: aliceblue;
